@@ -21,7 +21,7 @@
 
       <!-- Start Survey Step -->
       <div v-else-if="currentStep === 'start'" class="start-survey-container">
-        <h2>{{ startMessage }}</h2>
+        <h2>Bonjour,<br> Pour le compte de la ville de Croix,<br> Nous menons une étude sur l'utilisation du parking et ce afin de mieux connaitre vos besoins. Accepteriez vous de répondre a un court questionnaire?</h2>
         <button @click="startSurvey" class="btn-next">
           COMMENCER QUESTIONNAIRE
         </button>
@@ -196,9 +196,6 @@ const currentQuestion = computed(() => {
 
 // Methods
 
-const startMessage = computed(() => {
-  return "Bonjour, pour le compte de la ville de Croix, nous menos une ètude sur l'utilisation du parking et ce afin de mieux connaitre vos besoins. Accepteriez vous de répondre a un court questionnaire?";
-});
 
 const currentQuestionOptions = computed(() => {
   if (
